@@ -1,5 +1,5 @@
 # Accornion
-A react accordion library as small as an acorn (~1kb gzipped)
+A React accordion library as small as an acorn (~1kb gzipped)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
 
