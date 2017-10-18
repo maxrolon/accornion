@@ -70,6 +70,10 @@ class Accordion extends React.Component {
 
   render () {
     const {
+      children
+    } = this.props
+
+    const {
       height,
       closed
     } = this.state
@@ -85,17 +89,15 @@ class Accordion extends React.Component {
       'msTransition'
     ].map(prop => (styles[prop] = this.transition))
 
-    const children = (closed)
-      ? null
-      : this.props.children
-
     return (
       <div>
         <div
           style={styles}
           onTransitionEnd={() => this.handleTransitionEnd()}>
           <div ref={el => (this.inner = el)}>
-            {children}
+            <div style={{display: (closed ? 'none' : 'block')}}>
+              {children}
+            </div>
           </div>
         </div>
       </div>
