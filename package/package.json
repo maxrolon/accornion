@@ -1,6 +1,6 @@
 {
   "name": "accornion",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A react accordion library as small as an acorn.",
   "main": "dist/index.js",
   "license": "MIT",
